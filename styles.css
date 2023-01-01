@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 8rem;
+}
+
+header {
+    background-color: rgb(225, 173, 1);
+}
+
+.search-wrapper {
+    display: flex;
+    margin-top: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(8, 171, 146);
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.search-wrapper:hover>.search {
+    width: 150px;
+
+}
+
+.srh-btn {
+    display: flex;
+    float: right;
+    color: #055518;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(6, 197, 168);
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.search {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
+}
+
+.dropdown-btn li {
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* 
+#season {
+    position: absolute;
+    display: inline;
+    left: 220px;
+} */
+
+/* #episode {
+    position: absolute;
+    display: inline;
+    left: 250px;
+} */
+.card {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    box-shadow: 2rem;
+    box-shadow: 1px 1px 1px 2px rgb(225, 173, 1);
+    background-color: rgb(206, 206, 206);
+}
+
+.card-body {
+    height: 8rem;
+
+}
+
+.Card-btn {
+    background-color: rgb(7, 223, 191);
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+p {
+    overflow: scroll;
+    height: 90px
+}
+
+p::-webkit-scrollbar {
+    display: none;
+}
+
+/* p:hover {
+    overflow: scroll;
+} */
+/* .card-title {
+    display: inline;
+} */
+
+.summary {
+    text-align: center;
+}
+
+.dropdown-menu {
+    /* scrollable dropdown*/
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.dropdown-btn {
+    width: 150px;
+}
+
+.text {
+    margin: auto;
+}
