@@ -10,7 +10,7 @@ function padWithZero(num, targetLength) {
 }
 
 function html(ele) {
-  const epis = padWithZero(ele.number, String(ele.number).length + 1);
+  const epis = padWithZero(ele.number, String(2).length + 1);
   const seas = padWithZero(ele.season, String(ele.season).length + 1);
   const html = `<div class="card" style="width: 19rem">
   <img src="${ele.image.medium}" class="card-img-top" alt="Image of ${ele.name} episode"/>
@@ -75,7 +75,7 @@ function episodDropdown(data) {
   });
 
   data.forEach((ele) => {
-    const seas = padWithZero(ele.season, String(2).length + 1);
+    const seas = padWithZero(ele.season, String(ele.season).length + 1);
     const epis = padWithZero(ele.number, String(2).length + 1);
     const li = document.createElement("li");
     li.classList += "dropdown-item";
